@@ -3,18 +3,360 @@
 {% block title %}Hello HomeController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+ <! -- carousel -->
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>C:/Users/pc/mon-projet/src/Controller/HomeController.php</code></li>
-        <li>Your template at <code>C:/Users/pc/mon-projet/templates/home/index.html.twig</code></li>
-    </ul>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/carousel-1.jpg" class="d-block w-100" width="500" height="600" heightalt="elephants">
+                <div class="carousel-caption d-none d-md-block text-bottom">
+                    <h5>Des animaux venant de tous horizons</h5>
+                    <p>Découvrez trois mondes fidèles aux habitats naturels des animaux.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/carousel-2.jpg" class="d-block w-100" width="500" height="600" heightalt="elephants">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Un cadre respectueux de la nature</h5>
+                    <p>L'énergie est précieuse : le parc veille à préserver notre planète..</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/carousel-3.jpg" class="d-block w-100" width="500" height="600" heightalt="elephants">
+    
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>La santé avant tout</h5>
+                    <p>Au zoo d'Arcadia, le bien-être de nos animaux est une priorité.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <! -- end carousel -->
+
+
+    <! -- Section A propos -->
+
+<section id="accueil"> 
+    <article>
+        
+        <div class="container p-4">
+            
+            <h2 class="text-center mt-5 mb-5">À PROPOS DE NOUS</h2>
+            
+            <div class="row row-cols-2 align-items-center">
+                
+                <div class="col">
+                    
+                    <p class="text-justify">
+                        
+                        Arcadia est un zoo situé en France près de la forêt de Brocéliande, en bretagne depuis 1960.Ils possèdent tout un panel
+                        d’animaux, réparti par habitat (savane, jungle, marais) et font extrêmement attention à leurs santés. Chaque jour,
+                        plusieurs vétérinaires viennent afin d’effectuer les contrôles sur chaque animal avant l’ouverture du zoo afin de
+                        s’assurer que tout se passe bien, de même, toute la nourriture donnée est calculée afin d’avoir le bon grammage(le bon
+                        grammage est précisé dans le rapport du vétérinaire). 
+                        
+                    </p>
+                    
+                </div>
+                
+                <div class="col">
+                    
+                    <img class="w-100 rounded" src="images/about.jpg" />
+                    
+                </div>
+                
+            </div>
+            
+            
+            
+        </div>
+        
+    </article>
+    </section>
+
+
+<! -- end Section A propos -->
+
+
+<! -- Section Services -->
+
+
+    <section id="services">
+
+<div class="container">
+
+    <h2 class="text-center mt-5 mb-3">Nous Services</h2>
+
+
+        <div class="row row-cols-1 row-cols-md-3 ">
+            <div class="col-card">
+                <div class="card">
+                    <img src="images/services.png" class="card-img-top" width="250" height="300"
+     alt="Skyscrapers" />
+               
+     <div>
+        <p class="text-center mt-3" style = 'font-size:20px'><strong>Restauration</strong></p>
+    </div>
+     <div style="text-align:center">
+        <button class="btn btn-success center"><a class="nav-link" href="services.html">En Savoir plus</a></button>
+    </div>
+   
+                    
+                </div>
+            </div>
+            <div class="col-card">
+                <div class="card">
+                    <img src="images/services-girafe.jpeg" class="card-img-top" width="250" height="300"
+                        alt="Los Angeles Skyscrapers" />
+                    
+                    <div>
+                        <p class="text-center mt-3" style='font-size:20px'><strong>Visite des habitats avec
+                        un guide gratuit</strong></p>
+                        <div style="text-align:center">
+                            <button class="btn btn-success center"><a class="nav-link" href="services.html">En Savoir plus</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-card">
+                <div class="card ">
+                    <img src="images/services-Safari-train-2.jpg" class="card-img-top" width="250" height="300"
+                        alt="Palm Springs Road" />
+                    
+                    <div>
+                        <p class="text-center mt-3" style='font-size:20px'><strong>Visite du Zoo en petit train</strong></p>
+                    </div>
+                    <div style="text-align:center">
+                        <button class="btn btn-success center"><a class="nav-link" href="services.html">En Savoir plus</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+      
+    
+        <! -- end Section Services -->
+
+
+
+        <! -- Section Habitats -->
+        
+        
+            <section id="habitats">
+        
+                <div class="container">
+        
+                    <h2 class="text-center mt-5 mb-3">Les Habitats du Zoo</h2>
+        
+        
+                    <div class="row row-cols-1 row-cols-md-3 ">
+                        <div class="col-card">
+                            <div class="card">
+                                <img src="images/habitats-elephant.jpeg" class="card-img-top" width="250" height="300" alt="Skyscrapers" />
+        
+                                <div>
+                                    <p class="text-center mt-3" style='font-size:20px'><strong>Jungle</strong></p>
+                                </div>
+                                <div style="text-align:center">
+                                    <button class="btn btn-success center"><a class="nav-link" href="habitats.html">En Savoir
+                                            plus</a></button>
+                                </div>
+        
+        
+                            </div>
+                        </div>
+                        <div class="col-card">
+                            <div class="card">
+                                <img src="images/habitats-lyon.jpg" class="card-img-top" width="250" height="300"
+                                    alt="Los Angeles Skyscrapers" />
+        
+                                <div>
+                                    <p class="text-center mt-3" style='font-size:20px'><strong>Savane</strong></p>
+                                    <div style="text-align:center">
+                                        <button class="btn btn-success center"><a class="nav-link" href="habitats.html">En Savoir
+                                                plus</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-card">
+                            <div class="card ">
+                                <img src="images/habitats-marais.jpeg" class="card-img-top" width="250" height="300"
+                                    alt="Palm Springs Road" />
+        
+                                <div>
+                                    <p class="text-center mt-3" style='font-size:20px'><strong>Marais</strong></p>
+                                </div>
+                                <div style="text-align:center">
+                                    <button class="btn btn-success center"><a class="nav-link" href="habitats.html">En Savoir
+                                            plus</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+
+
+
+
+                <! -- Section Animals -->
+                
+                
+                    <section id="animals">
+                
+                        <div class="container">
+                
+                            <h2 class="text-center mt-5 mb-3">Les animals du Zoo</h2>
+                
+                
+                            <div class="row row-cols-1 row-cols-md-3 ">
+                                <div class="col-card">
+                                    <div class="card">
+                                        <img src="images/animals-zebra.jpg" class="card-img-top" width="250" height="300" alt="Skyscrapers" />
+                
+                                        <div>
+                                            <p class="text-center mt-3" style='font-size:20px'><strong>Zebra</strong></p>
+                                        </div>
+                                        <div style="text-align:right">
+                                            <button class="btn btn-success center"><a class="nav-link" href="animals.html">En Savoir
+                                                    plus</a></button>
+                                        </div>
+                
+                
+                                    </div>
+                                </div>
+                                <div class="col-card">
+                                    <div class="card">
+                                        <img src="images/animals-lyon.jpg" class="card-img-top" width="250" height="300"
+                                            alt="Los Angeles Skyscrapers" />
+                
+                                        <div>
+                                            <p class="text-center mt-3" style='font-size:20px'><strong>Lyon</strong></p>
+                                            <div style="text-align:right">
+                                                <button class="btn btn-success center"><a class="nav-link" href="animals.html">En Savoir
+                                                        plus</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-card">
+                                    <div class="card ">
+                                        <img src="images/animals-elephant.jpeg" class="card-img-top" width="250" height="300"
+                                            alt="Palm Springs Road" />
+                
+                                        <div>
+                                            <p class="text-center mt-3" style='font-size:20px'><strong>Elephant</strong></p>
+                                        </div>
+                                        <div style="text-align:right">
+                                            <button class="btn btn-success center"><a class="nav-link" href="animals.html">En Savoir
+                                                    plus</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+
+
+        <! -- Footer -->
+
+    
+<footer> 
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+<div class="titre mt-5">
+                <img class="img-fluid me-3" src="images/icon-10.png" alt="Icon">
+                <h1 class="m-0 text-success">Arcadia</h1>
+                <br>      
+            </div>
+<div class="text">
+
+<p>Arcadia est un zoo situé en France près<br>
+   de la forêt de Brocéliande, <br>en bretagne depuis 1960.  
+</p>
 </div>
+</div>
+           
+
+            
+            <div class="col-6 col-lg-4 mt-5">
+                <ul>
+                <h3>Menu</h3>
+              
+            <li class="nav-item">
+                <a class="nav-link" href="#accueil">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#habitats">Habitats</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#animals">Animals</a>
+            </li>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Mon Compte</a>
+                <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                    <a href="#" class="dropdown-item">Espace Admin</a>
+                    <a href="#" class="dropdown-item">Espace Employer</a>
+                    <a href="#" class="dropdown-item">Espace Veterinaire</a>
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Login</a>
+                <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                    <a class="dropdown-item" href="#connexion">Connexion</a>
+                    <a class="dropdown-item" href="#deconnexion">Deconnexion</a>
+                </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#animals">Contact</a>
+                </li>
+            </div>
+            </ul>
+
+           
+            </div>
+           
+           
+<div class="col-6 col-lg-4 mt-5">
+            <div class="horaires">
+
+                <h3>Nos Horaires</h3>
+                <p>Lundi     08 : 00 - 18 : 30 </p>
+                <p>Mardi     08 : 00 - 18 : 30</p>
+                <p>Mercredi  08 : 00 - 18 : 30</p> 
+                <p>Jeudi     08 : 00 - 18 : 30</p>
+                <p>Vendredi  08 : 00 - 18 : 30</p>
+                <p>Samedi    09 : 00 - 18 : 00</p>
+                <p>Dimanche   <strong>Fermé</strong></p>
+            </div>
+           
+        </div>
+        </div>
+        </div>
+    </div>
+       
+    </footer>
+
+
+    <! -- end Footer -->
+
+    
+</body>
+</html>
 {% endblock %}
